@@ -461,93 +461,101 @@ width: 200PX;
     flex-wrap: wrap !important;
   }
 }
-
-/* MOBILE: 768px and below */
+/* ===== MOBILE FIX - PASTE AT BOTTOM ===== */
 @media screen and (max-width: 768px) {
+  
+  body { overflow-x: hidden; }
+
   header {
     width: 100% !important;
-    padding-left: 20px !important;
     height: auto !important;
-    padding-bottom: 20px !important;
+    padding: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+    position: sticky !important;
   }
 
   .logo {
     position: static !important;
-    margin: 10px auto !important;
-    display: block !important;
+    left: auto !important;
+    top: auto !important;
+    margin: 0 auto !important;
   }
 
   nav {
     position: static !important;
     left: auto !important;
-    display: flex !important;
+    top: auto !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
-    margin-top: 10px !important;
+    gap: 10px !important;
   }
 
   .talk {
     position: static !important;
-    display: block !important;
-    margin: 10px auto !important;
+    left: auto !important;
+    top: auto !important;
   }
 
   .paragraph {
     width: 100% !important;
-    padding: 60px 20px !important;
+    height: auto !important;
+    padding: 40px 20px !important;
+  }
+
+  /* Make hero section stack */
+  .paragraph {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
     text-align: center !important;
   }
 
   .hero {
     position: static !important;
-    display: block !important;
-    margin: 30px auto !important;
     left: auto !important;
     top: auto !important;
     width: 250px !important;
     height: 250px !important;
+    margin: 30px auto !important;
+    border-radius: 20px !important;
   }
 
   .pdf, .linkedin, .github {
     position: static !important;
-    display: inline-block !important;
-    margin: 20px 10px 0 10px !important;
     left: auto !important;
     top: auto !important;
+    display: inline-block !important;
+    margin: 10px !important;
   }
 
   .linked, .git {
     position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
   }
 
-  .mm, .abou {
+  /* Remove all absolute positioning from sections */
+  .mm, .abou, .projects, .skills, .contact {
     position: static !important;
     left: auto !important;
     top: auto !important;
     width: 90% !important;
-    margin: 30px auto !important;
-  }
-
-  .projects, .skills, .contact {
-    position: static !important;
-    left: auto !important;
-    top: auto !important;
-    padding: 60px !important;
-    text-align: center !important;
+    margin: 40px auto !important;
+    padding: 25px !important;
   }
 
   .project-container, .skill-tags, .contact-main {
     flex-direction: column !important;
-    align-items: center !important;
+    gap: 20px !important;
   }
 
-  .html, .css, .design, .java {
-    width: 90% !important;
+  .html, .css, .design, .java, .card1, .card2, .card3 {
+    width: 100% !important;
     height: auto !important;
-  }
-
-  .contact-info {
-    text-align: center !important;
   }
 }
 
