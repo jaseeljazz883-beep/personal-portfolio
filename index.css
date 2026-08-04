@@ -3,7 +3,10 @@
 }
 
 html { scroll-behavior: smooth; }
-img { max-width: 100%; } 
+img { max-width: 100%; }
+  
+  
+
 
 
 header{
@@ -14,7 +17,7 @@ header{
         position: sticky;
         top: 0;
         z-index: 2;
-    
+       
         
         
 }
@@ -473,10 +476,13 @@ width: 200PX;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    gap: 15px !important;
+    gap: 12px !important;
     position: sticky !important;
-  }
-
+ }
+  a {
+    padding: 8px 14px !important;
+    font-size: 14px !important;
+ }
   .logo {
     position: static !important;
     left: auto !important;
@@ -490,13 +496,15 @@ width: 200PX;
     top: auto !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
-    gap: 10px !important;
+    gap: 8px !important;
   }
 
   .talk {
     position: static !important;
     left: auto !important;
     top: auto !important;
+    margin-top:5px !important;
+    padding : 10px 20px !important;
   }
 
   .paragraph {
