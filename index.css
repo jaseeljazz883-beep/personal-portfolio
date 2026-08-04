@@ -1,4 +1,9 @@
- 
+ section {
+  padding: 100px 0;
+}
+
+html { scroll-behavior: smooth; }
+img { max-width: 100%; } 
 
 
 header{
@@ -397,139 +402,160 @@ width: 200PX;
     margin-bottom: 15px;
     color: #CBD5E1;
 }
+/* ===== MEDIA QUERIES===== */
 
-/* ===== MOBILE FIX - ADD AT BOTTOM ===== */
-@media (max-width: 768px) {
+/* TABLET: 1024px and below */
+@media screen and (max-width: 1024px) {
+  header {
+    width: 100% !important;
+    padding-left: 40px !important;
+  }
+  
+  nav {
+    left: 300px !important;
+    gap: 15px !important;
+    font-size: 16px !important;
+  }
 
-    /* 1. Remove fixed width causing side scroll */
-    header, .paragraph {
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .talk {
+    left: 850px !important;
+  }
 
-    /* 2. HEADER */
-    header {
-        height: auto;
-        padding: 15px 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    .logo {
-        position: static;
-        margin: 0 auto;
-    }
-    nav {
-        position: static;
-        font-size: 14px;
-        gap: 10px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    nav a {
-        padding: 10px 15px;
-    }
-    .talk {
-        position: static;
-        margin: 0 auto;
-        font-size: 14px;
-    }
+  .paragraph {
+    width: 100% !important;
+    height: auto !important;
+    padding-left: 40px !important;
+    padding-top: 100px !important;
+  }
 
-    /* 3. HERO SECTION */
-    .paragraph {
-        height: auto;
-        padding: 60px 20px;
-        text-align: center;
-    }
-    .paragraph h1 { font-size: 32px; }
-    .paragraph h3 { font-size: 16px; }
-    
-    .hero {
-        position: static;
-        margin: 30px auto;
-        width: 250px;
-        height: 250px;
-    }
-    .hero img {
-        width: 250px;
-        height: 250px;
-    }
-    
-    .cvbutton, .pdf {
-        position: static;
-        margin: 15px auto;
-        display: block;
-        width: fit-content;
-    }
-    
-    .linkedin, .github {
-        position: static;
-        display: inline-block;
-        margin: 10px;
-    }
-    .linked, .git {
-        position: static;
-    }
+  .hero {
+    left: 650px !important;
+    width: 300px !important;
+    height: 300px !important;
+  }
 
-    /* 4. ABOUT */
-    .mm {
-        position: static;
-        text-align: center;
-        margin: 40px 0 20px 0;
-        font-size: 28px;
-    }
-    .abou {
-        position: static;
-        width: 90%;
-        margin: 0 auto;
-        font-size: 16px;
-        padding: 20px;
-    }
+  .mm {
+    left: 450px !important;
+  }
+  
+  .abou {
+    left: 150px !important;
+    width: 80% !important;
+  }
 
-    /* 5. PROJECTS */
-    .projects {
-        position: static;
-        padding: 60px 20px;
-    }
-    .projects .container h1 { font-size: 28px; }
-    .cards {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .card1, .card2, .card3 {
-        width: 100%;
-        margin: 0;
-    }
+  .projects {
+    left: 250px !important;
+  }
 
-    /* 6. SKILLS */
-    .skills {
-        position: static;
-        padding: 60px 20px;
-    }
-    .skills h1 { font-size: 28px; }
-    .skill-tags {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .html, .css, .design, .java {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
+  .skills {
+    left: 100px !important;
+    padding-right: 50px !important;
+  }
 
-    /* 7. CONTACT */
-    .contact {
-        position: static;
-        padding: 60px 20px;
-    }
-    .contact-container h1 { font-size: 28px; }
-    .contact-main {
-        flex-direction: column;
-        gap: 30px;
-    }
-    .contact-form, .contact-info {
-        width: 100%;
-    }
+  .contact {
+    left: 150px !important;
+    padding: 100px 40px !important;
+  }
+
+  .skill-tags {
+    flex-wrap: wrap !important;
+  }
 }
+
+/* MOBILE: 768px and below */
+@media screen and (max-width: 768px) {
+  header {
+    width: 100% !important;
+    padding-left: 20px !important;
+    height: auto !important;
+    padding-bottom: 20px !important;
+  }
+
+  .logo {
+    position: static !important;
+    margin: 10px auto !important;
+    display: block !important;
+  }
+
+  nav {
+    position: static !important;
+    left: auto !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    margin-top: 10px !important;
+  }
+
+  .talk {
+    position: static !important;
+    display: block !important;
+    margin: 10px auto !important;
+  }
+
+  .paragraph {
+    width: 100% !important;
+    padding: 60px 20px !important;
+    text-align: center !important;
+  }
+
+  .hero {
+    position: static !important;
+    display: block !important;
+    margin: 30px auto !important;
+    left: auto !important;
+    top: auto !important;
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .pdf, .linkedin, .github {
+    position: static !important;
+    display: inline-block !important;
+    margin: 20px 10px 0 10px !important;
+    left: auto !important;
+    top: auto !important;
+  }
+
+  .linked, .git {
+    position: static !important;
+  }
+
+  .mm, .abou {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    width: 90% !important;
+    margin: 30px auto !important;
+  }
+
+  .projects, .skills, .contact {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    padding: 60px 20px !important;
+    text-align: center !important;
+  }
+
+  .project-container, .skill-tags, .contact-main {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .html, .css, .design, .java {
+    width: 90% !important;
+    height: auto !important;
+  }
+
+  .contact-info {
+    text-align: center !important;
+  }
+}
+
+/* SMALL MOBILE: 480px and below */
+@media screen and (max-width: 480px) {
+  .paragraph h1 { font-size: 28px !important; }
+  .paragraph h3 { font-size: 14px !important; }
+  .hero { width: 200px !important; height: 200px !important; }
+  a { padding: 12px 15px !important; font-size: 13px !important; }
+}
+
