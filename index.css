@@ -67,6 +67,7 @@ nav{
     left: 1370px;
     top: 40px;
     background-color: #1E293B!important;
+ cursor:pointer;
 }
 
 .image{background-color: #334155;
