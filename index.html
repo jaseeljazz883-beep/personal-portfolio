@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
 </head>
     <link rel="stylesheet" href="index.css">
-    </head>
+    
     <body>
         <header>   
 <div class ="header">
@@ -103,13 +102,12 @@
         
         <div class="contact-main">
             
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email" >
-                <textarea placeholder="Your Message" rows="3"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-
+           <form id="contact-form" class="contact-form">
+             <input type="text" name="name" placeholder="Your Name" required>
+             <input type="email" name="email" placeholder="Your Email" required>
+           <textarea name="message" placeholder="Your Message" rows="3" required></textarea>
+          <button type="submit">Send Message</button>
+           </form>
             
             <div class="contact-info">
                 <h3>Get in Touch</h3>
@@ -123,6 +121,32 @@
     </div>
 </section>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+<script>
+emailjs.init("fAhNmvDIJpd0u3AUn");
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+
+    emailjs.sendForm(
+        "service_o1i8kl6",
+        "template_hul8a4p",
+        
+    )
+    .then(() => {
+        alert("Email Sent Successfully!");
+        form.reset();
+    })
+    .catch((error) => {
+        alert("Failed to send Email");
+        console.log(error);
+    });
+});
+</script>
+
 </body>
 </html>
            
