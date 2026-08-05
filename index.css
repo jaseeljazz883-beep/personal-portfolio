@@ -478,7 +478,6 @@ width: 200PX;
     flex-direction: column !important;
     align-items: center !important;
     gap: 12px !important;
-    position: sticky !important;
  }
   a {
     padding: 8px 14px !important;
