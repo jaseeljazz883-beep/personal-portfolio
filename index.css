@@ -560,8 +560,10 @@ width: 200PX;
   .project-container, .skill-tags, .contact-main {
     flex-direction: column !important;
     gap: 20px !important;
-   padding: 0 15px !important;
   }
+ .project-container, .skill-tags,{
+   padding: 0 15px !important;
+ }
 
   .html, .css, .design, .java, .card1, .card2, .card3 {
     width: 100% !important;
