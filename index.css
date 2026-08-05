@@ -1,14 +1,10 @@
- section {
+section {
   padding: 100px 0;
 }
 
 html { scroll-behavior: smooth; }
 img { max-width: 100%; }
   
-  
-
-
-
 header{
         background-color: #0F172A;
         height: 110px;
@@ -16,10 +12,7 @@ header{
         padding-left: 100px;
         position: sticky;
         top: 0;
-        z-index: 2;
-       
-        
-        
+        z-index: 2;      
 }
 
 .logo{height: 80px;
@@ -44,7 +37,7 @@ nav{
     display: flex;
     font-size: 20px;
     position: absolute;
-    left: 500px;
+    left: 520px;
     gap: 25px; 
     top:35px;   
     text-align: center; 
@@ -67,7 +60,7 @@ nav{
     left: 1370px;
     top: 40px;
     background-color: #1E293B!important;
- cursor:pointer;
+    cursor:pointer;
 }
 
 .image{background-color: #334155;
@@ -96,15 +89,12 @@ nav{
 
 }
 
-
-
 .hero{position: absolute;
      left: 1100px;
     top: 300px;
     height: 380px;
     width: 380px;
 }
-
 
 .cvbutton{background-color:  #1e293b;
     padding:20px;
@@ -121,11 +111,10 @@ nav{
     padding: 0%;
     margin: 0%;
     color: #e2e8f0;
+
 }
 
-
-.linkedin{
-    
+.linkedin {    
     position: absolute;
     left: 130px;
     top:560px;
@@ -133,15 +122,15 @@ nav{
     margin: 0%;
 }
      
-.github{
-    
+.github {
+
     position: absolute;
     left: 230px;
     top:560px;
     padding: 0%;
     margin: 0%;
 }
-.linked{
+.linked {
     background-color: #FFFFFF;
     border-radius: 50px;
      position: absolute;
@@ -162,7 +151,7 @@ nav{
 
 .mm{
     position:absolute;
-    left: 760px;
+    left: 735px;
     top: 830px;
     bottom:0px;
     font-size: 20px;
@@ -174,13 +163,12 @@ nav{
     background-color: #1E293B;
     color: #e2e8f0;
     position:absolute;
-    left: 460px;
+    left: 430px;
      padding: 40px;
     top: 950px;
     border-radius: 25px;
     font-size: 20px;
-    
-    
+
 }
 .abou:hover{
     background-color: #7C3AED;
@@ -191,7 +179,7 @@ nav{
 .projects {
     position: absolute;
     top: 1500px;
-    left:500px;
+    left:495px;
     text-align: center;
 }
 
@@ -259,7 +247,7 @@ nav{
  .skills{
     position: absolute;
     top :2300px;
-    left: 220px;
+    left: 190px;
  text-align: center;
  padding-top: 200px;
  padding-right: 130px;
@@ -321,7 +309,7 @@ width: 200PX;
 .contact {
     position: absolute;
     top:3000px;
-    left: 420px;
+    left: 390px;
     padding: 100px 80px;
     text-align: center;
     color: #e2e8f0;
@@ -561,7 +549,8 @@ width: 200PX;
     flex-direction: column !important;
     gap: 20px !important;
   }
- .project-container, .skill-tags,{
+
+ .project-container, .skill-tags{
    padding: 0 15px !important;
  }
 
@@ -571,7 +560,7 @@ width: 200PX;
    margin:0 10px !important;
    box-sizing: border-box !important;
   }
-}
+
 
 /* SMALL MOBILE: 480px and below */
 @media screen and (max-width: 480px) {
@@ -580,4 +569,4 @@ width: 200PX;
   .hero { width: 200px !important; height: 200px !important; }
   a { padding: 12px 15px !important; font-size: 13px !important; }
 }
-
+}
