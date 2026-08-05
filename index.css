@@ -473,11 +473,12 @@ width: 200PX;
   header {
     width: 100% !important;
     height: auto !important;
-    padding: 20px !important;
+    padding: 15px !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     gap: 12px !important;
+    position :static !important;
  }
   a {
     padding: 8px 14px !important;
