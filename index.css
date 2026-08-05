@@ -552,18 +552,21 @@ width: 200PX;
     left: auto !important;
     top: auto !important;
     width: 90% !important;
-   
+    margin: 40px auto !important;
+    padding: 25px !important;
   }
 
   .project-container, .skill-tags, .contact-main {
     flex-direction: column !important;
     gap: 20px !important;
+   padding: 0 15px !important;
   }
 
   .html, .css, .design, .java, .card1, .card2, .card3 {
     width: 100% !important;
     height: auto !important;
    margin:0 10px !important;
+   box-sizing: border-box !important;
   }
 }
 
